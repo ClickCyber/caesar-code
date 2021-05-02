@@ -22,7 +22,7 @@ $("#Result_decode").click(function(){
    for(i=1; i <Lenght; i++){
     var div = document.createElement("div");
     div.classList.add("card");
-    div.style = "width: 18rem; left: 20%;";
+    div.style = "width: 18rem; left: 10%;";
     var divBody = document.createElement("div");
     divBody.classList.add("card-body");
     var divHeader = document.createElement("div");
@@ -40,7 +40,7 @@ $("#Result_decode").click(function(){
     var Button = document.createElement("a")
     Button.classList.add("btn");
     Button.classList.add("btn-primary");
-    Button.href = "https://wa.me/000";
+    Button.href = "https://wa.me/?text=" + result[i];
     Button.innerText = "share a result";
     setcipher.classList.add("card-text");
     setcipher.appendChild(infoText);
@@ -84,7 +84,7 @@ $("#Result_encode").click(function(){
    for(i=1; i <Lenght; i++){
     var div = document.createElement("div");
     div.classList.add("card");
-    div.style = "width: 18rem; left: 20%;";
+    div.style = "width: 18rem; left: 10%;";
     var divBody = document.createElement("div");
     divBody.classList.add("card-body");
     var divHeader = document.createElement("div");
@@ -102,7 +102,7 @@ $("#Result_encode").click(function(){
     var Button = document.createElement("a")
     Button.classList.add("btn");
     Button.classList.add("btn-primary");
-    Button.href = "https://wa.me/000";
+    Button.href = "https://wa.me/?text=" + result[i] ;
     Button.innerText = "share a result";
     setcipher.classList.add("card-text");
     setcipher.appendChild(infoText);
